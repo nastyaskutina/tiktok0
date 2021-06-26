@@ -35,7 +35,7 @@ def get_tiktoks():
 tiktoks = get_tiktoks()
 
 
-@app.route('/', methods=['get'])
+@app.route('/index.html')
 def trading_page():
     popit = random.choice(tiktoks)
     tier = [random.randint(1, 3), random.randint(1, 3), random.randint(1, 3)]
