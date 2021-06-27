@@ -52,18 +52,18 @@ input[type="button"].interaction {
 }
 
 input[type="button"].add {
-	background: url('/static/button_add.png') no-repeat top;
+	background: url('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/static/button_add.png') no-repeat top;
 	background-size: contain;
 }
 
 input[type="button"].check {
-	background: url('button_check.png') no-repeat top;
+	background: url('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/static/button_check.png') no-repeat top;
 	background-size: contain;
 	transform: rotate(-90deg);
 }
 
 input[type="button"].cross {
-	background: url('button_cross.png') no-repeat top;
+	background: url('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/static/button_cross.png') no-repeat top;
 	background-size: contain;
 }
 
