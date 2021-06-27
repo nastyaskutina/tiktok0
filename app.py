@@ -42,7 +42,7 @@ def trading_page():
     img = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
     tradability = ['tradable', 'non-tradable1', 'non-tradable2']
     random.shuffle(tradability)
-    return render_template('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/index.html', tier=tier, img=img, info=popit, tradability=tradability)
+    return render_template('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/templates/index.html', tier=tier, img=img, info=popit, tradability=tradability)
 
 
 @app.route('/decline')
