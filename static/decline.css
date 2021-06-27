@@ -11,7 +11,7 @@ h1 {
 }
 
 body {
-	background-image: url("rain.gif");
+	background-image: url("https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/static/rain.gif");
 	background-size: 110%;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
@@ -34,7 +34,7 @@ footer {
 }
 
 footer p {
-	background-image: url("button.png");
+	background-image: url("https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/static/button.png");
 	background-size: 100% 100%;
 	margin: 0 auto;
 	font-size: 30px;
