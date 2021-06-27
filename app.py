@@ -19,7 +19,7 @@ def get_str_data_info(data_string):
 
 def get_sad_tiktoks():
     sad_tiktoks = []
-    with open('sad.txt') as f:
+    with open('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/sad.txt') as f:
         for line in f.readlines():
             author, id = line.split()
             sad_tiktoks.append({'author_name': author, 'tiktok_id': id})
@@ -27,7 +27,7 @@ def get_sad_tiktoks():
 
 
 def get_tiktoks():
-    with open('tiktoks.txt', errors="ignore") as file:
+    with open('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/tiktoks.txt', errors="ignore") as file:
         data_string = file.readlines()
     return get_str_data_info(data_string)
 
@@ -42,18 +42,18 @@ def trading_page():
     img = [random.randint(1, 6), random.randint(1, 6), random.randint(1, 6)]
     tradability = ['tradable', 'non-tradable1', 'non-tradable2']
     random.shuffle(tradability)
-    return render_template('index.html', tier=tier, img=img, info=popit, tradability=tradability)
+    return render_template('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/index.html', tier=tier, img=img, info=popit, tradability=tradability)
 
 
 @app.route('/decline')
 def decline_page():
     info = random.choice(get_sad_tiktoks())
-    return render_template('decline-outcome.html', info=info)
+    return render_template('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/templates/decline-outcome.html', info=info)
 
 
 @app.route('/agree')
 def agree_page():
-    return render_template('agree-outcome.html')
+    return render_template('https://raw.githubusercontent.com/nastyaskutina/tiktok0/main/templates/agree-outcome.html')
 
 
 if __name__ == '__main__':
